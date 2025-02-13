@@ -4,7 +4,7 @@
     --cinza-secundário: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
-    --fonte-principal: 'inter';
+    --fonte-principal: 'Inter';
 }
 
 body {
@@ -70,12 +70,12 @@ body {
 }
 
 .secundario__imagem {
-    width: 45%;
+    width: 80%;
 }
 
 .secundario {
     align-items: center;
-    margin: 0 6em;
+    margin: 0 10em;
 }
 
 .descricao__titulo {
@@ -85,15 +85,37 @@ body {
     margin-bottom: 0.1em;
 }
 
-.descrcao__texto {
+.descricao__texto {
     color: var(--cinza-secundário);
 }
 
 .secundario__botao {
-    display: inline-block;
+    display: inline-block;/* "inline" -> transforma o elemento em linha,com um elemento só ele ocupa só o espaço dele, sem pegar a linha inteira como antes
+    "block" -> faz uma quebra de linha do texto de cima e nos permitiria usar as propriedades width e height (permite mudar o tamanho desse botão)*/
     margin-top: 1em;
 }
 
 .container__descricao {
     padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;/*Flexbox*/
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
 }
